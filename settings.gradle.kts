@@ -16,8 +16,15 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://repository.map.naver.com/archive/maven")
+        }
     }
 }
 
 rootProject.name = "swing"
 include(":app")
+include(":data")
+include(":remote")
+include(":domain")
+include(":local")
